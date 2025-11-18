@@ -1,0 +1,9 @@
+---
+const {ID} = Astro.props;
+
+const data = await fetch("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + ID);
+const imageData = await data.json();
+---
+
+<img src={imageData.url} alt="" />
+<p>{ID}</p>
