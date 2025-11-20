@@ -1,16 +1,18 @@
 ---
 import Link from "./Link.astro";
 const links = [
-    {title:'Link 1', url: "https://pokeapi.co/api/v2/pokemon/"}
+    {title:'Link 1', url: "https://pokeapi.co/api/v2/pokemon?limit=151%27"}
 ];
 
-const data = await fetch("https://pokeapi.co/api/v2/pokemon/");
+const data = await fetch("https://pokeapi.co/api/v2/pokemon?limit=151%27");
 const pokemon = await data.json();
-import PokeSprite from "./PokeSprite.astro"
+const selectedPoke = pokemon.slice(1, 25);
 ---
-
-{links.map(function(link){
-    return <Link data={link}/>
-<code>{JSON.stringify(pokemon)}</code>
+<div class="poke-grid">
+{selectedPoke.map(function(links){
+    return <Link data={links}/>
+<code>{JSON.stringify(pokemon)}</code>;
 
 })} 
+</div>
+

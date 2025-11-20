@@ -1,7 +1,240 @@
 ---
-import Link from "@components/Link.astro";
-import LinkGroup from "@components/LinkGroup.astro";
-
+export const pageTitle = "Project 2";
 ---
+<html>
+<body>
 
-<LinkGroup></LinkGroup>
+<div class="pokemon">
+  <section class="roster">
+  <div class="hexagon" id="bulbasaur"></div>
+  <div class="hexagon" id="charmander"></div>
+  <div class="hexagon" id="squirtle"></div>
+  </section>
+  
+  <section class="roster-2">
+  <div class="hexagon" id="chikorita"></div>
+  <div class="hexagon" id="cyndaquil"></div>
+  <div class="hexagon" id="totodile"></div>
+  </section>
+  
+  <section class="roster-3">
+  <div class="hexagon" id="treeko"></div>
+  <div class="hexagon" id="torchic"></div>
+  <div class="hexagon" id="mudkip"></div>
+  </section>
+  
+  <section class="roster-4">
+  <div class="hexagon" id="turtwig"></div>
+  <div class="hexagon" id="chimchar"></div>
+  <div class="hexagon" id="piplup"></div> 
+  </section>
+   
+  <section class="roster-5">
+  <div class="hexagon" id="snivy"></div>
+  <div class="hexagon" id="tepig"></div>
+  <div class="hexagon" id="oshawott"></div>
+  </section>
+  
+  <section class="roster-6">
+  <div class="hexagon" id="chespin"></div>
+  <div class="hexagon" id="fennekin"></div>
+  <div class="hexagon" id="froakie"></div>
+  </section>
+
+  <section class="roster-7">
+  <div class="hexagon" id="rowlet"></div>
+  <div class="hexagon" id="litten"></div>
+  <div class="hexagon" id="popplio"></div>
+  </section>
+
+  <section class="roster-8">
+  <div class="hexagon" id="grookey"></div>
+  <div class="hexagon" id="scorbunny"></div>
+  <div class="hexagon" id="sobble"></div>
+  </section>
+
+  <section class="roster-9">
+  <div class="hexagon" id="sprigatito"></div>
+  <div class="hexagon" id="fuecoco"></div>
+  <div class="hexagon" id="quaxly"></div>
+  </section>
+  </div>
+</body>
+</html>
+
+<style>
+body{
+    background-color: rgb(230, 228, 228);
+    display: flex;
+    width: 100px;
+}
+.pokemon{
+    max-width: 1600px;
+    height: 850px;
+
+}
+.roster{
+  display: flex;
+  position: absolute;
+}
+.roster-2{
+  display: flex;
+  position: relative;
+  left: 55px;
+  top: 85px;
+}
+.roster-3{
+  display: flex;
+  position: absolute;
+}
+.roster-4{
+  display: flex;
+  position: relative;
+  left: 55px;
+  top: 85px;
+}
+.roster-5{
+  display: flex;
+  position: absolute;
+}
+.roster-6{
+  display: flex;
+  position: relative;
+  left: 55px;
+  top: 85px;
+}
+.roster-7{
+  display: flex;
+  position: absolute;
+}
+.roster-8{
+  display: flex;
+  position: relative;
+  left: 55px;
+  top: 85px;
+}
+.roster-9{
+  display: flex;
+  position: absolute;
+}
+
+.hexagon{
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  margin: 35px 5px;
+  transition: all .2s;
+}
+.hexagon:hover{
+  background-color: gray;
+}
+#bulbasaur{
+  background-image: url("../assets/images/1.png");
+  background-size: 100%;
+}
+#charmander{
+  background-image: url("../assets/images/4.png");
+  background-size: 100%;
+}
+#squirtle{
+  background-image: url("../assets/images/7.png");
+  background-size: 100%;
+}
+#chikorita{
+  background-image: url("../assets/images/152.png");
+  background-size: 100%;
+}
+#cyndaquil{
+  background-image: url("../assets/images/155.png");
+  background-size: 100%;
+}
+#totodile{
+  background-image: url("../assets/images/158.png");
+  background-size: 100%;
+}
+#treeko{
+  background-image: url("../assets/images/252.png");
+  background-size: 100%;
+}
+#torchic{
+  background-image: url("../assets/images/255.png");
+  background-size: 100%;
+}
+#mudkip{
+  background-image: url("../assets/images/258.png");
+  background-size: 100%;
+}
+#turtwig{
+  background-image: url("../assets/images/387.png");
+  background-size: 100%;
+}
+#chimchar{
+  background-image: url("../assets/images/390.png");
+  background-size: 100%;
+}
+#piplup{
+  background-image: url("../assets/images/393.png");
+  background-size: 100%;
+}
+#snivy{
+  background-image: url("../assets/images/495.png");
+  background-size: 100%;
+}
+#tepig{
+  background-image: url("../assets/images/498.png");
+  background-size: 100%;
+}
+#oshawott{
+  background-image: url("../assets/images/501.png");
+  background-size: 100%;
+}
+#chespin{
+  background-image: url("../assets/images/650.png");
+  background-size: 100%;
+}
+#fennekin{
+  background-image: url("../assets/images/653.png");
+  background-size: 100%;
+}
+#froakie{
+  background-image: url("../assets/images/656.png");
+  background-size: 100%;
+}
+#rowlet{
+  background-image: url("../assets/images/722.png");
+  background-size: 100%;
+}
+#litten{
+  background-image: url("../assets/images/725.png");
+  background-size: 100%;
+}
+#popplio{
+  background-image: url("../assets/images/728.png");
+  background-size: 100%;
+}
+#grookey{
+  background-image: url("../assets/images/810.png");
+  background-size: 100%;
+}
+#scorbunny{
+  background-image: url("../assets/images/813.png");
+  background-size: 100%;
+}
+#sobble{
+  background-image: url("../assets/images/816.png");
+  background-size: 100%;
+}
+#sprigatito{
+  background-image: url("../assets/images/906.png");
+  background-size: 100%;
+}
+#fuecoco{
+  background-image: url("../assets/images/909.png");
+  background-size: 100%;
+}
+#quaxly{
+  background-image: url("../assets/images/912.png");
+  background-size: 100%;
+}
+</style>
