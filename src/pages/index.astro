@@ -2,11 +2,39 @@
 export const pageTitle = "Project 2";
 ---
 <html>
-<body>
 
+<body>
+<div class="selected">
+<div class="starter-1">
+  <img id="bulbasaur-image" 
+         src=
+"https://archives.bulbagarden.net/media/upload/thumb/e/ec/0912Quaxly.png/200px-0912Quaxly.png" 
+         style="display: none;">
+    <script>
+        const bulbasaur = document.getElementById("bulbasaur");
+        const myImage = document.getElementById("bulbasaur-image");
+        bulbasaur.addEventListener("click", () => {
+            myImage.style.display = "block";
+        });
+    </script>
+</div>
+  <div class="starter-27">
+  <img id="quaxly-image" 
+         src=
+"https://archives.bulbagarden.net/media/upload/thumb/e/ec/0912Quaxly.png/200px-0912Quaxly.png" 
+         style="display: none;">
+    <script>
+        const quaxly = document.getElementById("quaxly");
+        const myImage = document.getElementById("quaxly-image");
+        quaxly.addEventListener("click", () => {
+            myImage.style.display = "block";
+        });
+    </script>
+</div>
+</div>
 <div class="pokemon">
   <section class="roster">
-  <div class="hexagon" id="bulbasaur"></div>
+  <button class="hexagon" id="bulbasaur"></button>
   <div class="hexagon" id="charmander"></div>
   <div class="hexagon" id="squirtle"></div>
   </section>
@@ -56,22 +84,35 @@ export const pageTitle = "Project 2";
   <section class="roster-9">
   <div class="hexagon" id="sprigatito"></div>
   <div class="hexagon" id="fuecoco"></div>
-  <div class="hexagon" id="quaxly"></div>
+  <button class="hexagon" id="quaxly"></button>
   </section>
   </div>
 </body>
+    
 </html>
 
 <style>
+html{
+  max-width: fit-content;
+}
 body{
     background-color: rgb(230, 228, 228);
     display: flex;
-    width: 100px;
+    flex-direction: column;
+    justify-content: center;
+}
+.selected{
+  border: solid 2px black;
+  width: 1000px;
+  height: 700px;
+}
+#quaxly-image{
+  width: 500px;
+  height: 500px;
+  padding-top: 100px;
 }
 .pokemon{
-    max-width: 1600px;
-    height: 850px;
-
+  height: 1700px;
 }
 .roster{
   display: flex;
@@ -80,50 +121,58 @@ body{
 .roster-2{
   display: flex;
   position: relative;
-  left: 55px;
-  top: 85px;
+  left: 105px;
+  top: 170px;
+  width: fit-content;
 }
 .roster-3{
   display: flex;
   position: absolute;
+  width: fit-content;
 }
 .roster-4{
   display: flex;
   position: relative;
-  left: 55px;
-  top: 85px;
+  left: 105px;
+  top: 170px;
+  width: fit-content;
 }
 .roster-5{
   display: flex;
   position: absolute;
+  width: fit-content;
 }
 .roster-6{
   display: flex;
   position: relative;
-  left: 55px;
-  top: 85px;
+  left: 105px;
+  top: 170px;
+  width: fit-content;
 }
 .roster-7{
   display: flex;
   position: absolute;
+  width: fit-content;
 }
 .roster-8{
   display: flex;
   position: relative;
-  left: 55px;
-  top: 85px;
+  left: 105px;
+  top: 170px;
+  width: fit-content;
 }
 .roster-9{
   display: flex;
   position: absolute;
+  width: fit-content;
 }
 
 .hexagon{
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   background-color: black;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  margin: 35px 5px;
+  margin: 70px 5px 70px 5px;
   transition: all .2s;
 }
 .hexagon:hover{
