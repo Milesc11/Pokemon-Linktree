@@ -3,7 +3,7 @@ export const pageTitle = "Project 2";
 ---
 <html>
 <script>
-  const pokemonNames = ["bulbasaur", "charmander", "squirtle"]
+  const pokemonNames = ["bulbasaur", "charmander", "squirtle", "chikorita", "totodile", "cyndaquil"]
   function hideAll(){
     pokemonNames.forEach(function(pokemon){
         const myImage = document.getElementById(pokemon + "-image");
@@ -35,61 +35,136 @@ export const pageTitle = "Project 2";
             <p>"A strange seed was planted on its back at birth. The plant sprouts and grows with this Pokemon."</p>
             <a href="https://bulbapedia.bulbagarden.net/wiki/Bulbasaur_(Pok%C3%A9mon)">More Info</a>
         </div>
-    </div>
+     </div>
   </div>
+  
+  <div id="charmander-image" style="display: none;">
+      <div class="panel-container">
+        <img src="/images/renders/500px-0004Charmander.png">
+        <div class="panel">
+            <h2>Charmander</h2>
+            <p>Type: Fire</p>
+            <p>Region: Kanto</p>
+            <p>Height: 2'00" / 0.6m</p>
+            <p>Weight: 18.7 lbs. / 8.5kg</p>
+            <p>"Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail."</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Charmander_(Pok%C3%A9mon)">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="squirtle-image" style="display: none;">
+      <div class="panel-container">
+        <img src="/images/renders/500px-0007Squirtle.png">
+        <div class="panel">
+            <h2>Squirtle</h2>
+            <p>Type: Water</p>
+            <p>Region: Kanto</p>
+            <p>Height: 1'08" / 0.5m</p>
+            <p>Weight: 19.8 lbs. / 9.0kg</p>
+            <p>"After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth."</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Squirtle_(Pok%C3%A9mon)">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="chikorita-image" style="display: none;">
+      <div class="panel-container">
+        <img src="/images/renders/500px-0152Chikorita.png">
+        <div class="panel">
+            <h2>Squirtle</h2>
+            <p>Type: Water</p>
+            <p>Region: Kanto</p>
+            <p>Height: 1'08" / 0.5m</p>
+            <p>Weight: 19.8 lbs. / 9.0kg</p>
+            <p>"After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth."</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Squirtle_(Pok%C3%A9mon)">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="cyndaquil-image" style="display: none;">
+      <div class="panel-container">
+        <img src="/images/renders/500px-0155Cyndaquil.png">
+        <div class="panel">
+            <h2>Squirtle</h2>
+            <p>Type: Water</p>
+            <p>Region: Kanto</p>
+            <p>Height: 1'08" / 0.5m</p>
+            <p>Weight: 19.8 lbs. / 9.0kg</p>
+            <p>"After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth."</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Squirtle_(Pok%C3%A9mon)">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="totodile-image" style="display: none;">
+      <div class="panel-container">
+        <img src="/images/renders/0158Totodile.png">
+        <div class="panel">
+            <h2>Squirtle</h2>
+            <p>Type: Water</p>
+            <p>Region: Kanto</p>
+            <p>Height: 1'08" / 0.5m</p>
+            <p>Weight: 19.8 lbs. / 9.0kg</p>
+            <p>"After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth."</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Squirtle_(Pok%C3%A9mon)">More Info</a>
+        </div>
+      </div>
+    </div>
 </div>
 <div class="pokemon">
   <section class="roster">
   <button class="hexagon" id="bulbasaur"></button>
-  <div class="hexagon" id="charmander"></div>
-  <div class="hexagon" id="squirtle"></div>
+  <button class="hexagon" id="charmander"></button>
+  <button class="hexagon" id="squirtle"></button>
   </section>
   
   <section class="roster-2">
-  <div class="hexagon" id="chikorita"></div>
-  <div class="hexagon" id="cyndaquil"></div>
-  <div class="hexagon" id="totodile"></div>
+  <button class="hexagon" id="chikorita"></button>
+  <button class="hexagon" id="cyndaquil"></button>
+  <button class="hexagon" id="totodile"></button>
   </section>
   
   <section class="roster-3">
-  <div class="hexagon" id="treeko"></div>
-  <div class="hexagon" id="torchic"></div>
-  <div class="hexagon" id="mudkip"></div>
+  <button class="hexagon" id="treeko"></button>
+  <button class="hexagon" id="torchic"></button>
+  <button class="hexagon" id="mudkip"></button>
   </section>
   
   <section class="roster-4">
-  <div class="hexagon" id="turtwig"></div>
-  <div class="hexagon" id="chimchar"></div>
-  <div class="hexagon" id="piplup"></div> 
+  <button class="hexagon" id="turtwig"></button>
+  <button class="hexagon" id="chimchar"></button>
+  <button class="hexagon" id="piplup"></button> 
   </section>
    
   <section class="roster-5">
-  <div class="hexagon" id="snivy"></div>
-  <div class="hexagon" id="tepig"></div>
-  <div class="hexagon" id="oshawott"></div>
+  <button class="hexagon" id="snivy"></button>
+  <button class="hexagon" id="tepig"></button>
+  <button class="hexagon" id="oshawott"></button>
   </section>
   
   <section class="roster-6">
-  <div class="hexagon" id="chespin"></div>
-  <div class="hexagon" id="fennekin"></div>
-  <div class="hexagon" id="froakie"></div>
+  <button class="hexagon" id="chespin"></button>
+  <button class="hexagon" id="fennekin"></button>
+  <button class="hexagon" id="froakie"></button>
   </section>
 
   <section class="roster-7">
-  <div class="hexagon" id="rowlet"></div>
-  <div class="hexagon" id="litten"></div>
-  <div class="hexagon" id="popplio"></div>
+  <button class="hexagon" id="rowlet"></button>
+  <button class="hexagon" id="litten"></button>
+  <button class="hexagon" id="popplio"></button>
   </section>
 
   <section class="roster-8">
-  <div class="hexagon" id="grookey"></div>
-  <div class="hexagon" id="scorbunny"></div>
-  <div class="hexagon" id="sobble"></div>
+  <button class="hexagon" id="grookey"></button>
+  <button class="hexagon" id="scorbunny"></button>
+  <button class="hexagon" id="sobble"></button>
   </section>
 
   <section class="roster-9">
-  <div class="hexagon" id="sprigatito"></div>
-  <div class="hexagon" id="fuecoco"></div>
+  <button class="hexagon" id="sprigatito"></button>
+  <button class="hexagon" id="fuecoco"></button>
   <button class="hexagon" id="quaxly"></button>
   </section>
 </div>
@@ -115,11 +190,12 @@ body{
   border: solid 7px black;
   border-radius: 2rem;
   width: 900px;
-  height: 500px;
+  height: 450px;
   display: flex;
   flex-direction: row;
   align-items: center;
   background-color: lightgray;
+  margin-top: 20px;
 }
 .panel{
   padding: 1rem;
