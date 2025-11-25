@@ -2,35 +2,41 @@
 export const pageTitle = "Project 2";
 ---
 <html>
-
+<script>
+  const pokemonNames = ["bulbasaur", "charmander", "squirtle"]
+  function hideAll(){
+    pokemonNames.forEach(function(pokemon){
+        const myImage = document.getElementById(pokemon + "-image");
+         if (myImage){
+          myImage.style.display = "none";
+        }
+       })
+  }
+  pokemonNames.forEach(function(pokemon){
+     const button = document.getElementById(pokemon);
+        const myImage = document.getElementById(pokemon + "-image");
+        button.addEventListener("click", () => {
+          hideAll();
+            myImage.style.display = "block";
+        });
+  })
+</script>
 <body>
-<div class="selected">
-<div class="starter-1">
-  <img id="bulbasaur-image" 
-         src=
-"https://archives.bulbagarden.net/media/upload/thumb/e/ec/0912Quaxly.png/200px-0912Quaxly.png" 
-         style="display: none;">
-    <script>
-        const bulbasaur = document.getElementById("bulbasaur");
-        const myImage = document.getElementById("bulbasaur-image");
-        bulbasaur.addEventListener("click", () => {
-            myImage.style.display = "block";
-        });
-    </script>
-</div>
-  <div class="starter-27">
-  <img id="quaxly-image" 
-         src=
-"https://archives.bulbagarden.net/media/upload/thumb/e/ec/0912Quaxly.png/200px-0912Quaxly.png" 
-         style="display: none;">
-    <script>
-        const quaxly = document.getElementById("quaxly");
-        const myImage = document.getElementById("quaxly-image");
-        quaxly.addEventListener("click", () => {
-            myImage.style.display = "block";
-        });
-    </script>
-</div>
+  <div class="selected">
+    <div id="bulbasaur-image" style="display: none;">
+      <div class="panel-container">
+        <img src="/images/renders/500px-0001Bulbasaur.png">
+        <div class="panel">
+            <h2>Bulbasaur</h2>
+            <p>Type: Grass/Poison</p>
+            <p>Region: Kanto</p>
+            <p>Height: 2'04" / 0.7m</p>
+            <p>Weight: 15.2 lbs. / 6.9kg</p>
+            <p>"A strange seed was planted on its back at birth. The plant sprouts and grows with this Pokemon."</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Bulbasaur_(Pok%C3%A9mon)">More Info</a>
+        </div>
+    </div>
+  </div>
 </div>
 <div class="pokemon">
   <section class="roster">
@@ -86,14 +92,17 @@ export const pageTitle = "Project 2";
   <div class="hexagon" id="fuecoco"></div>
   <button class="hexagon" id="quaxly"></button>
   </section>
-  </div>
+</div>
 </body>
     
 </html>
 
 <style>
 html{
-  max-width: fit-content;
+  /* max-width: fit-content; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 body{
     background-color: rgb(230, 228, 228);
@@ -101,20 +110,58 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+
 .selected{
-  border: solid 2px black;
-  width: 1000px;
-  height: 700px;
-}
-#quaxly-image{
-  width: 500px;
+  border: solid 7px black;
+  border-radius: 2rem;
+  width: 900px;
   height: 500px;
-  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: lightgray;
 }
+.panel{
+  padding: 1rem;
+  height: fit-content;
+  background-color: white;
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+.panel > h2{
+text-align: center;
+margin-top: 0;
+}
+.panel > p{
+  margin: 10px 0px;
+}
+.panel > a{
+padding: 10px 0px;
+text-decoration: none;
+}
+.panel-container{
+  display: flex;
+  align-items: center;
+}
+.panel-container > img{
+  height: 400px;
+  width: 400px;
+  padding: 1rem;
+}
+
+
 .pokemon{
-  height: 1700px;
+  /* height: 1700px; */
+  margin:0 auto;
 }
-.roster{
+.pokemon > *{
+  margin-bottom:-180px;
+  display: flex;
+}
+.pokemon > *:nth-child(even){
+  padding-left: 105px;
+}
+/* .roster{
   display: flex;
   position: absolute;
 }
@@ -165,7 +212,7 @@ body{
   display: flex;
   position: absolute;
   width: fit-content;
-}
+} */
 
 .hexagon{
   width: 200px;
@@ -178,112 +225,113 @@ body{
 .hexagon:hover{
   background-color: gray;
 }
+
 #bulbasaur{
-  background-image: url("../assets/images/1.png");
+  background-image: url("/images/sprites/1.png");
   background-size: 100%;
 }
 #charmander{
-  background-image: url("../assets/images/4.png");
+  background-image: url("/images/sprites/4.png");
   background-size: 100%;
 }
 #squirtle{
-  background-image: url("../assets/images/7.png");
+  background-image: url("/images/sprites/7.png");
   background-size: 100%;
 }
 #chikorita{
-  background-image: url("../assets/images/152.png");
+  background-image: url("/images/sprites/152.png");
   background-size: 100%;
 }
 #cyndaquil{
-  background-image: url("../assets/images/155.png");
+  background-image: url("/images/sprites/155.png");
   background-size: 100%;
 }
 #totodile{
-  background-image: url("../assets/images/158.png");
+  background-image: url("/images/sprites/158.png");
   background-size: 100%;
 }
 #treeko{
-  background-image: url("../assets/images/252.png");
+  background-image: url("/images/sprites/252.png");
   background-size: 100%;
 }
 #torchic{
-  background-image: url("../assets/images/255.png");
+  background-image: url("/images/sprites/255.png");
   background-size: 100%;
 }
 #mudkip{
-  background-image: url("../assets/images/258.png");
+  background-image: url("/images/sprites/258.png");
   background-size: 100%;
 }
 #turtwig{
-  background-image: url("../assets/images/387.png");
+  background-image: url("/images/sprites/387.png");
   background-size: 100%;
 }
 #chimchar{
-  background-image: url("../assets/images/390.png");
+  background-image: url("/images/sprites/390.png");
   background-size: 100%;
 }
 #piplup{
-  background-image: url("../assets/images/393.png");
+  background-image: url("/images/sprites/393.png");
   background-size: 100%;
 }
 #snivy{
-  background-image: url("../assets/images/495.png");
+  background-image: url("/images/sprites/495.png");
   background-size: 100%;
 }
 #tepig{
-  background-image: url("../assets/images/498.png");
+  background-image: url("/images/sprites/498.png");
   background-size: 100%;
 }
 #oshawott{
-  background-image: url("../assets/images/501.png");
+  background-image: url("/images/sprites/501.png");
   background-size: 100%;
 }
 #chespin{
-  background-image: url("../assets/images/650.png");
+  background-image: url("/images/sprites/650.png");
   background-size: 100%;
 }
 #fennekin{
-  background-image: url("../assets/images/653.png");
+  background-image: url("/images/sprites/653.png");
   background-size: 100%;
 }
 #froakie{
-  background-image: url("../assets/images/656.png");
+  background-image: url("/images/sprites/656.png");
   background-size: 100%;
 }
 #rowlet{
-  background-image: url("../assets/images/722.png");
+  background-image: url("/images/sprites/722.png");
   background-size: 100%;
 }
 #litten{
-  background-image: url("../assets/images/725.png");
+  background-image: url("/images/sprites/725.png");
   background-size: 100%;
 }
 #popplio{
-  background-image: url("../assets/images/728.png");
+  background-image: url("/images/sprites/728.png");
   background-size: 100%;
 }
 #grookey{
-  background-image: url("../assets/images/810.png");
+  background-image: url("/images/sprites/810.png");
   background-size: 100%;
 }
 #scorbunny{
-  background-image: url("../assets/images/813.png");
+  background-image: url("/images/sprites/813.png");
   background-size: 100%;
 }
 #sobble{
-  background-image: url("../assets/images/816.png");
+  background-image: url("/images/sprites/816.png");
   background-size: 100%;
 }
 #sprigatito{
-  background-image: url("../assets/images/906.png");
+  background-image: url("/images/sprites/906.png");
   background-size: 100%;
 }
 #fuecoco{
-  background-image: url("../assets/images/909.png");
+  background-image: url("/images/sprites/909.png");
   background-size: 100%;
 }
 #quaxly{
-  background-image: url("../assets/images/912.png");
+  background-image: url("/images/sprites/912.png");
   background-size: 100%;
 }
 </style>
