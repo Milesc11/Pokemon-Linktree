@@ -21,8 +21,14 @@ export const pageTitle = "Project 2";
         });
   })
 </script>
+<head>
+    <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/images/pokefavicon.svg" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+    <link rel="manifest" href="/images/site.webmanifest" />
+</head>
 <body>
-  <div class="background"></div>
   <div class="selected">
     <div id="bulbasaur-image" style="display: none;">
       <div class="panel-container">
@@ -613,6 +619,12 @@ text-decoration: none;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   margin: 70px 5px 70px 5px;
   transition: all .2s;
+}
+.hexagon::before{
+  width: 210px;
+  height: 210px;
+  background-color: white;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 .hexagon:hover{
   background-color: gray;
