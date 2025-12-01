@@ -3,7 +3,7 @@ export const pageTitle = "Project 2";
 ---
 <html>
 <script>
-  const pokemonNames = ["bulbasaur", "charmander", "squirtle", "chikorita", "totodile", "cyndaquil"]
+  const pokemonNames = ["bulbasaur", "charmander", "squirtle", "chikorita", "totodile", "cyndaquil", "treecko", "torchic", "mudkip", "turtwig", "chimchar", "piplup", "snivy", "tepig", "oshawott", "chespin", "fennekin", "froakie", "rowlet", "litten", "popplio", "grookey", "scorbunny", "sobble", "sprigatito", "fuecoco", "quaxly"]
   function hideAll(){
     pokemonNames.forEach(function(pokemon){
         const myImage = document.getElementById(pokemon + "-image");
@@ -22,6 +22,7 @@ export const pageTitle = "Project 2";
   })
 </script>
 <body>
+  <div class="background"></div>
   <div class="selected">
     <div id="bulbasaur-image" style="display: none;">
       <div class="panel-container">
@@ -30,23 +31,23 @@ export const pageTitle = "Project 2";
             <h2>Bulbasaur</h2>
             <p>Type: Grass/Poison</p>
             <p>Region: Kanto</p>
-            <p>Height: 2'04" / 0.7m</p>
-            <p>Weight: 15.2 lbs. / 6.9kg</p>
+            <p>Height: 2'04" / 0.7 m</p>
+            <p>Weight: 15.2 lbs. / 6.9 kg</p>
             <p>"A strange seed was planted on its back at birth. The plant sprouts and grows with this Pokemon."</p>
             <a href="https://bulbapedia.bulbagarden.net/wiki/Bulbasaur_(Pok%C3%A9mon)">More Info</a>
         </div>
-     </div>
-  </div>
+      </div>
+    </div>
   
-  <div id="charmander-image" style="display: none;">
+    <div id="charmander-image" style="display: none;">
       <div class="panel-container">
         <img src="/images/renders/500px-0004Charmander.png">
         <div class="panel">
             <h2>Charmander</h2>
             <p>Type: Fire</p>
             <p>Region: Kanto</p>
-            <p>Height: 2'00" / 0.6m</p>
-            <p>Weight: 18.7 lbs. / 8.5kg</p>
+            <p>Height: 2'00" / 0.6 m</p>
+            <p>Weight: 18.7 lbs. / 8.5 kg</p>
             <p>"Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail."</p>
             <a href="https://bulbapedia.bulbagarden.net/wiki/Charmander_(Pok%C3%A9mon)">More Info</a>
         </div>
@@ -60,8 +61,8 @@ export const pageTitle = "Project 2";
             <h2>Squirtle</h2>
             <p>Type: Water</p>
             <p>Region: Kanto</p>
-            <p>Height: 1'08" / 0.5m</p>
-            <p>Weight: 19.8 lbs. / 9.0kg</p>
+            <p>Height: 1'08" / 0.5 m</p>
+            <p>Weight: 19.8 lbs. / 9.0 kg</p>
             <p>"After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth."</p>
             <a href="https://bulbapedia.bulbagarden.net/wiki/Squirtle_(Pok%C3%A9mon)">More Info</a>
         </div>
@@ -72,13 +73,13 @@ export const pageTitle = "Project 2";
       <div class="panel-container">
         <img src="/images/renders/500px-0152Chikorita.png">
         <div class="panel">
-            <h2>Squirtle</h2>
-            <p>Type: Water</p>
-            <p>Region: Kanto</p>
-            <p>Height: 1'08" / 0.5m</p>
-            <p>Weight: 19.8 lbs. / 9.0kg</p>
-            <p>"After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth."</p>
-            <a href="https://bulbapedia.bulbagarden.net/wiki/Squirtle_(Pok%C3%A9mon)">More Info</a>
+            <h2>Chikorita</h2>
+            <p>Type: Grass</p>
+            <p>Region: Johto</p>
+            <p>Height: 2'11" / 0.9 m</p>
+            <p>Weight: 14.1 lbs. / 6.4 kg</p>
+            <p>"A sweet aroma gently wafts from the leaf on its head. It is docile and loves to soak up the sun's rays."</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Chikorita_(Pok%C3%A9mon)">More Info</a>
         </div>
       </div>
     </div>
@@ -87,13 +88,13 @@ export const pageTitle = "Project 2";
       <div class="panel-container">
         <img src="/images/renders/500px-0155Cyndaquil.png">
         <div class="panel">
-            <h2>Squirtle</h2>
-            <p>Type: Water</p>
-            <p>Region: Kanto</p>
-            <p>Height: 1'08" / 0.5m</p>
-            <p>Weight: 19.8 lbs. / 9.0kg</p>
-            <p>"After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth."</p>
-            <a href="https://bulbapedia.bulbagarden.net/wiki/Squirtle_(Pok%C3%A9mon)">More Info</a>
+            <h2>Cyndaquil</h2>
+            <p>Type: Fire</p>
+            <p>Region: Johto</p>
+            <p>Height: 1'08" / 0.5 m</p>
+            <p>Weight: 17.4 lbs. / 7.9 kg</p>
+            <p>"It is timid, and always curls itself up in a ball. If attacked, it flares up its back for protection."</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Cyndaquil_(Pok%C3%A9mon)">More Info</a>
         </div>
       </div>
     </div>
@@ -102,13 +103,328 @@ export const pageTitle = "Project 2";
       <div class="panel-container">
         <img src="/images/renders/0158Totodile.png">
         <div class="panel">
-            <h2>Squirtle</h2>
+            <h2>Totodile</h2>
             <p>Type: Water</p>
-            <p>Region: Kanto</p>
-            <p>Height: 1'08" / 0.5m</p>
-            <p>Weight: 19.8 lbs. / 9.0kg</p>
-            <p>"After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth."</p>
-            <a href="https://bulbapedia.bulbagarden.net/wiki/Squirtle_(Pok%C3%A9mon)">More Info</a>
+            <p>Region: Johto</p>
+            <p>Height: 2'00" / 0.6 m</p>
+            <p>Weight: 20.9 lbs. / 9.5 kg</p>
+            <p>"Its well-developed jaws are powerful and capable of crushing anything. Even its trainer must be careful."</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Totodile_(Pok%C3%A9mon)">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="treecko-image" style="display: none;">
+      <div class="panel-container">
+        <img src="/images/renders/500px-0252Treecko.png">
+        <div class="panel">
+            <h2>Treecko</h2>
+            <p>Type: Grass</p>
+            <p>Region: Hoenn</p>
+            <p>Height: 1'08" / 0.5 m</p>
+            <p>Weight: 11.0 lbs. / 5.0 kg</p>
+            <p>"Treecko has small hooks on the bottom of its feet that enable it to scale vertical walls. This Pokemon attacks by slamming foes with its thick tail."</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Treecko_(Pok%C3%A9mon)">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="torchic-image" style="display: none;">
+      <div class="panel-container">
+        <img src="/images/renders/500px-0255Torchic.png">
+        <div class="panel">
+            <h2>Torchic</h2>
+            <p>Type: Fire</p>
+            <p>Region: Hoenn</p>
+            <p>Height: 1'04" / 0.4 m</p>
+            <p>Weight: 5.5 lbs. / 2.5 kg</p>
+            <p>"Torchic sticks with its Trainer, following behind with unsteady steps. This Pokemon breathes fire of over 1,800 degrees F, including fireballs that leave the foe scorched black."</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Torchic_(Pok%C3%A9mon)">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="mudkip-image" style="display: none;">
+      <div class="panel-container">
+        <img src="/images/renders/500px-0258Mudkip.png">
+        <div class="panel">
+            <h2>Mudkip</h2>
+            <p>Type: Water</p>
+            <p>Region: Hoenn</p>
+            <p>Height: 1'04" / 0.4 m</p>
+            <p>Weight: 16.8 lbs. / 7.6 kg</p>
+            <p>"The fin on Mudkip's head acts as highly sensitive radar. Using this fin to sense movements of water and air, this Pokemon can determine what is taking place around it without using its eyes."</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Mudkip_(Pok%C3%A9mon)">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="turtwig-image" style="display: none;">
+      <div class="panel-container">
+        <img src="/images/renders/500px-0387Turtwig.png">
+        <div class="panel">
+            <h2>Turtwig</h2>
+            <p>Type: Grass</p>
+            <p>Region: Sinnoh</p>
+            <p>Height: 1'04" / 0.4 m</p>
+            <p>Weight: 22.5 lbs. / 10.2 kg</p>
+            <p>"Made from soil, the shell on its back hardens when it drinks water. It lives along lakes."</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Turtwig_(Pok%C3%A9mon)">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="chimchar-image" style="display: none;">
+      <div class="panel-container">
+        <img src="/images/renders/500px-0390Chimchar.png">
+        <div class="panel">
+            <h2>Chimchar</h2>
+            <p>Type: Fire</p>
+            <p>Region: Sinnoh</p>
+            <p>Height: 1'08" / 0.5 m</p>
+            <p>Weight: 13.7 lbs. / 6.2 kg</p>
+            <p>"It agilely scales sheer cliffs to live atop craggy mountains. Its fire is put out when it sleeps."</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Chimchar_(Pok%C3%A9mon)">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="piplup-image" style="display: none;">
+      <div class="panel-container">
+        <img src="/images/renders/500px-0393Piplup.png">
+        <div class="panel">
+            <h2>Piplup</h2>
+            <p>Type: Water</p>
+            <p>Region: Sinnoh</p>
+            <p>Height: 1'04" / 0.4 m</p>
+            <p>Weight: 11.5 lbs. / 5.2 kg</p>
+            <p>"Because it is very proud, it hates accepting food from people. Its thick down guards it from cold."</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Piplup_(Pok%C3%A9mon)">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="snivy-image" style="display: none;">
+      <div class="panel-container">
+        <img src="/images/renders/0495Snivy.png">
+        <div class="panel">
+            <h2>Snivy</h2>
+            <p>Type: Grass</p>
+            <p>Region: Unova</p>
+            <p>Height: 2'00" / 0.6 m</p>
+            <p>Weight: 17.6 lbs. / 8.1 kg</p>
+            <p>"It is very intelligent and calm. Being exposed to lots of sunlight makes its movements swifter."</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Snivy_(Pok%C3%A9mon)">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="tepig-image" style="display: none;">
+      <div class="panel-container">
+        <img src="/images/renders/500px-0498Tepig.png">
+        <div class="panel">
+            <h2>Tepig</h2>
+            <p>Type: Fire</p>
+            <p>Region: Unova</p>
+            <p>Height: 1'08" / 0.5 m</p>
+            <p>Weight: 21.8 lbs. / 9.9 kg</p>
+            <p>"It can deftly dodge its foe's attacks while shooting fireballs from its nose. It roasts berries before it eats them."</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Tepig_(Pok%C3%A9mon)">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="oshawott-image" style="display: none;">
+      <div class="panel-container">
+        <img src="/images/renders/500px-0501Oshawott.png">
+        <div class="panel">
+            <h2>Oshawott</h2>
+            <p>Type: Water</p>
+            <p>Region: Unova</p>
+            <p>Height: 1'08" / 0.5 m</p>
+            <p>Weight: 13.0 lbs. / 5.9 kg</p>
+            <p>"It fights using the scalchop on its stomach. In response to an attack, it retaliates immediately by slashing."</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Oshawott_(Pok%C3%A9mon)">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="chespin-image" style="display: none;">
+      <div class="panel-container">
+        <img src="/images/renders/500px-0650Chespin.png">
+        <div class="panel">
+            <h2>Chespin</h2>
+            <p>Type: Grass</p>
+            <p>Region: Kalos</p>
+            <p>Height: 1'04" / 0.4 m</p>
+            <p>Weight: 19.8 lbs. / 9.0 kg</p>
+            <p>"The quills on its head are usually soft. When it flexes them, the points become so hard and sharp that they can pierce rock."</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Chespin_(Pok%C3%A9mon)">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="fennekin-image" style="display: none;">
+      <div class="panel-container">
+        <img src="/images/renders/500px-0653Fennekin.png">
+        <div class="panel">
+            <h2>Fennekin</h2>
+            <p>Type: Fire</p>
+            <p>Region: Kalos</p>
+            <p>Height: 1'04" / 0.4 m</p>
+            <p>Weight: 20.7 lbs. / 9.4 kg</p>
+            <p>"Eating a twig fills it with energy, and its roomy ears give vent to air hotter than 390 degrees Fahrenheit."</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Fennekin_(Pok%C3%A9mon)">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="froakie-image" style="display: none;">
+      <div class="panel-container">
+        <img src="/images/renders/500px-0656Froakie.png">
+        <div class="panel">
+            <h2>Froakie</h2>
+            <p>Type: Water</p>
+            <p>Region: Kalos</p>
+            <p>Height: 1'00" / 0.3 m</p>
+            <p>Weight: 15.4 lbs. / 7.0 kg</p>
+            <p>"It secretes flexible bubbles from its chest and back. The bubbles reduce the damage it would otherwise take when attacked."</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Froakie_(Pok%C3%A9mon)">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="rowlet-image" style="display: none;">
+      <div class="panel-container">
+        <img src="/images/renders/500px-0722Rowlet.png">
+        <div class="panel">
+            <h2>Rowlet</h2>
+            <p>Type: Grass/Flying</p>
+            <p>Region: Alola</p>
+            <p>Height: 1'00" / 0.3 m</p>
+            <p>Weight: 3.3 lbs. / 1.5 kg</p>
+            <p>"This wary Pokemon uses photosynthesis to store up energy during the day, while becoming active at night."</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Rowlet_(Pok%C3%A9mon)">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="litten-image" style="display: none;">
+      <div class="panel-container">
+        <img src="/images/renders/500px-0725Litten.png">
+        <div class="panel">
+            <h2>Litten</h2>
+            <p>Type: Fire</p>
+            <p>Region: Alola</p>
+            <p>Height: 1'04" / 0.4 m</p>
+            <p>Weight: 9.5 lbs. / 4.3 kg</p>
+            <p>"While grooming itself, it builds up fur inside its stomach. It sets the fur alight and spews fiery attacks, which change based on how it coughs."</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Litten_(Pok%C3%A9mon)">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="popplio-image" style="display: none;">
+      <div class="panel-container">
+        <img src="/images/renders/500px-0728Popplio.png">
+        <div class="panel">
+            <h2>Popplio</h2>
+            <p>Type: Water</p>
+            <p>Region: Alola</p>
+            <p>Height: 1'04" / 0.4 m</p>
+            <p>Weight: 16.5 lbs. / 7.5 kg</p>
+            <p>"This Pokemon snorts body fluids from its nose, blowing balloons to smash into its foes. It's famous for being a hard worker."</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Popplio_(Pok%C3%A9mon)">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="grookey-image" style="display: none;">
+      <div class="panel-container">
+        <img src="/images/renders/500px-0810Grookey.png">
+        <div class="panel">
+            <h2>Grookey</h2>
+            <p>Type: Grass</p>
+            <p>Region: Galar</p>
+            <p>Height: 1'00" / 0.3 m</p>
+            <p>Weight: 11.0 lbs. / 5.0 kg</p>
+            <p>"When it uses its special stick to strike up a beat, the sound waves produced carry revitalizing energy to the plants and flowers in the area."</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Grookey_(Pok%C3%A9mon)">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="scorbunny-image" style="display: none;">
+      <div class="panel-container">
+        <img src="/images/renders/500px-0813Scorbunny.png">
+        <div class="panel">
+            <h2>Scorbunny</h2>
+            <p>Type: Fire</p>
+            <p>Region: Galar</p>
+            <p>Height: 1'00" / 0.3 m</p>
+            <p>Weight: 9.9 lbs. / 4.5 kg</p>
+            <p>"A warm-up of running around gets fire energy coursing through this Pokemon's body. Once that happens, it's ready to fight at full power."</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Scorbunny_(Pok%C3%A9mon)">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="sobble-image" style="display: none;">
+      <div class="panel-container">
+        <img src="/images/renders/500px-0816Sobble.png">
+        <div class="panel">
+            <h2>Sobble</h2>
+            <p>Type: Water</p>
+            <p>Region: Galar</p>
+            <p>Height: 1'00" / 0.3 m</p>
+            <p>Weight: 8.8 lbs. / 4.0 kg</p>
+            <p>"When scared, this Pokemon cries. Its tears pack the chemical punch of 100 onions, and attackers won't be able to resist weeping."</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Sobble_(Pok%C3%A9mon)">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="sprigatito-image" style="display: none;">
+      <div class="panel-container">
+        <img src="/images/renders/500px-0906Sprigatito.png">
+        <div class="panel">
+            <h2>Sprigatito</h2>
+            <p>Type: Grass</p>
+            <p>Region: Paldea</p>
+            <p>Height: 1'04" / 0.4 m</p>
+            <p>Weight: 9.0 lbs. / 4.1 kg</p>
+            <p>"Its fluffy fur is similar in composition to plants. This Pokemon frequently washes its face to keep it from drying out."</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Sprigatito_(Pok%C3%A9mon)">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="fuecoco-image" style="display: none;">
+      <div class="panel-container">
+        <img src="/images/renders/500px-0909Fuecoco.png">
+        <div class="panel">
+            <h2>Fuecoco</h2>
+            <p>Type: Fire</p>
+            <p>Region: Paldea</p>
+            <p>Height: 1'04" / 0.4 m</p>
+            <p>Weight: 21.6 lbs. / 9.8 kg</p>
+            <p>"It lies on warm rocks and uses the heat absorbed by its square-shaped scales to create fire energy."</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Fuecoco_(Pok%C3%A9mon)">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="quaxly-image" style="display: none;">
+      <div class="panel-container">
+        <img src="/images/renders/500px-0912Quaxly.png">
+        <div class="panel">
+            <h2>Quaxly</h2>
+            <p>Type: Water</p>
+            <p>Region: Paldea</p>
+            <p>Height: 1'08" / 0.5 m</p>
+            <p>Weight: 13.4 lbs. / 6.1 kg</p>
+            <p>"This Pokemon migrated to Paldea from distant lands long ago. The gel secreted by its feathers repels water and grime."</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Quaxly_(Pok%C3%A9mon)">More Info</a>
         </div>
       </div>
     </div>
@@ -127,7 +443,7 @@ export const pageTitle = "Project 2";
   </section>
   
   <section class="roster-3">
-  <button class="hexagon" id="treeko"></button>
+  <button class="hexagon" id="treecko"></button>
   <button class="hexagon" id="torchic"></button>
   <button class="hexagon" id="mudkip"></button>
   </section>
@@ -180,10 +496,11 @@ html{
   align-items: center;
 }
 body{
-    background-color: rgb(230, 228, 228);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  background: url("/images/transparent-pokeball.webp") 25% repeat, white 25%;
+  background-size: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .selected{
@@ -224,7 +541,6 @@ text-decoration: none;
   width: 400px;
   padding: 1rem;
 }
-
 
 .pokemon{
   /* height: 1700px; */
@@ -326,7 +642,7 @@ text-decoration: none;
   background-image: url("/images/sprites/158.png");
   background-size: 100%;
 }
-#treeko{
+#treecko{
   background-image: url("/images/sprites/252.png");
   background-size: 100%;
 }
